@@ -88,7 +88,7 @@ NOTES-APP/
 
 ### 1️. Clone the Repository
 
-git clone https://github.com/anushreeurao/Cloud-Based-Note-Taking-App
+git clone https://github.com/anushreeurao/Cloud-Based-Note-Taking-App.git
 
 ---
 
