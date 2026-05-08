@@ -1,0 +1,10 @@
+.dashboard-header {
+  margin-bottom: 2rem; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+}

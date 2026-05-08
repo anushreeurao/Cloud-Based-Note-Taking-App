@@ -1,0 +1,98 @@
+.form-container {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.input-field::placeholder {
+  color: #94a3b8;
+}
+
+.input-field.no-margin {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.input-label {
+  display: block; 
+  font-size: 0.875rem; 
+  color: #94a3b8; 
+  margin-bottom: 0.5rem;
+}
+
+.textarea-field {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: white;
+  height: 8rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.textarea-field::placeholder {
+  color: #94a3b8;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.expiry-picker-group {
+  margin-top: 1rem;
+}
+
+.input-with-button {
+  display: flex; 
+  gap: 0.5rem; 
+  align-items: center; 
+  margin-bottom: 1rem;
+}
+
+.input-group-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-full-width {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

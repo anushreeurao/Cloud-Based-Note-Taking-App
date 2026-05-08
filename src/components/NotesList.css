@@ -1,0 +1,87 @@
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.note-card {
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.note-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
+}
+
+.note-body {
+  color: #cbd5e1;
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+.note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.note-card-header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin-bottom: 1rem;
+}
+
+.note-timestamp {
+  margin: 0; 
+  font-size: 0.75rem; 
+  color: #94a3b8;
+}
+
+.note-expiry-info {
+  font-size: 0.875rem; 
+  color: #86efac; 
+  margin: 0 0 1rem 0;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tags-container.no-margin {
+  margin: 0;
+}
+
+.tag {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  background: rgba(99, 102, 241, 0.3);
+  border-radius: 9999px;
+  color: #e0e7ff;
+}
+
+@media (max-width: 768px) {
+  .note-grid {
+    grid-template-columns: 1fr;
+  }
+}
